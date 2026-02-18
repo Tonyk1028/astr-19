@@ -1,0 +1,42 @@
++*In[1]:*+
+[source, ipython3]
+----
+import numpy as np
+import matplotlib.pyplot as plt
+----
+
+
++*In[2]:*+
+[source, ipython3]
+----
+random_numbers = np.random.uniform(0, 1, 1000)
+----
+
+
++*In[3]:*+
+[source, ipython3]
+----
+plt.figure()
+
+plt.hist(random_numbers, bins=100)
+
+plt.xlabel("Random Value")
+plt.ylabel("Frequency")
+plt.title("Histogram of 1000 Uniform Random Numbers")
+
+plt.savefig("uniform_histogram.pdf")
+plt.show()
+----
+
+
++*Out[3]:*+
+----
+![png](output_2_0.png)
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
