@@ -1,0 +1,42 @@
++*In[1]:*+
+[source, ipython3]
+----
+import numpy as np
+import matplotlib.pyplot as plt
+----
+
+
++*In[2]:*+
+[source, ipython3]
+----
+random_numbers = np.random.exponential(scale=1.0, size=1000)
+----
+
+
++*In[3]:*+
+[source, ipython3]
+----
+plt.figure()
+
+plt.hist(random_numbers, bins=100, edgecolor='black')
+
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.title("Histogram of 1000 Exponential Random Numbers")
+
+plt.savefig("exponential_histogram.pdf")
+plt.show()
+----
+
+
++*Out[3]:*+
+----
+![png](output_2_0.png)
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
